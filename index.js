@@ -1,15 +1,32 @@
-function calculate(num1, operator, num2){
+// FIRST STYLE OF WRITING FUNCTIONS
+// function calculate(num1, operator, num2){
+//     num1 = parseFloat(num1);
+//     num2 = parseFloat(num2);
+//     switch(operator){
+//         case '+' : return num1 + num2;  //addition
+//         case '-' : return num1 - num2;  //subtraction
+//         case '*' : return num1 * num2;  //multiplication
+//         case '/' : return num1 / num2;  //division
+//         case '%' : return num1 % num2;  //modulus
+//         default : return "Error";
+//     }
+// }
+
+// SECOND STYLE OF WRITING FUNCTIONS
+const calculate = (num1, operator, num2) => {
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
-    switch(operator){
-        case '+' : return num1 + num2;  //addition
-        case '-' : return num1 - num2;  //subtraction
-        case '*' : return num1 * num2;  //multiplication
-        case '/' : return num1 / num2;  //division
-        case '%' : return num1 % num2;  //modulus
-        default : return "Error";
-    }
+        switch(operator){
+            case '+' : return num1 + num2;  //addition
+            case '-' : return num1 - num2;  //subtraction
+            case '*' : return num1 * num2;  //multiplication
+            case '/' : return num1 / num2;  //division
+            case '%' : return num1 % num2;  //modulus
+            default : return "Error";
+        }
+
 }
+
 firstNumber = 50;
 SecondNumber = 4;
 console.log("The first number is",firstNumber);
